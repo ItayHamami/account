@@ -1,0 +1,21 @@
+#myInput {
+background: url(./images/icons8-search.svg);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat; 
+    width: 70%;
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd;
+    margin-bottom: 12px; 
+}
+
+#mainDiv{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+#clearBtn{
+    width: 20%;
+}
+body{
+    background-image: url(./images/background.png);
+}

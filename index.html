@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="display-2 text-primary text-center">MY <i class="fa-solid fa-chart-pie text-secondary"></i> ACCOUNT</h2>
+        <br><br>
+        <div class="alert alert-secondary" role="alert" id="balance">Balance:</div>
+        <div class="row d-flex">
+            <div class="col-md-4">
+                <select class="form-select" aria-label="Default select example" id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+                </select>
+                <div class="form-floating mb-3">
+                <input
+                    type="text"
+                    class="form-control mt-3"
+                    id="description"
+                    placeholder="Description"
+                />
+                
+                <label for="description">Description</label>
+                </div>
+                <div class="form-floating">
+                <input
+                    type="number"
+                    class="form-control"+
+                    
+                    id="amount"
+                    placeholder="Amount"
+                />
+                <label for="amount">Amount</label>
+                </div>
+                <button class="btn btn-primary w-100 mt-3" onclick="addNewAction()" >Add</button>
+            </div>
+<div  class="col-md-8">
+    <input type="text" id="myInput"  placeholder="Search for a category">
+
+<div id="mainDiv">
+                
+                <table id="actionsTable" class="table">
+                <thead>
+                    <tr>
+                    <th id="tableDes">Description</th>
+                    <th id="tableAmount">Amount</th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody id="actions"></tbody>
+                </table>
+            </div>
+</div>
+            
+
+        </div>
+    </div>
+
+    
+        <script src="script.js" type="module"></script>
+</body>
+</html>
